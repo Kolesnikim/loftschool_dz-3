@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer')
 const validator = require('validator')
 
 const config = require('../nodemailer.config.json')
-const db = require('../db')
+const db = require('../models/db')
 
 exports.getMainPage = (req, res, next) => {
     const products = db.get('products').value()

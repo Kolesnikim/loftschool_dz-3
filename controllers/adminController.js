@@ -4,7 +4,7 @@ const fs = require(('fs'))
 const validator = require('validator')
 const formidable = require('formidable')
 
-const db = require('../db')
+const db = require('../models/db')
 
 exports.isAdmin = (req, res, next) => {
     if (req.session.isAdmin) {
